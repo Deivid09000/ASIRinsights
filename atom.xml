@@ -1,4 +1,5 @@
-<feed xml:lang="es" xml:base="https://deivid09000.github.io/ASIRinsights/">
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es" xml:base="https://deivid09000.github.io/ASIRinsights/">
   <id>https://deivid09000.github.io/ASIRinsights</id>
   <title>Bienvenido a ASIR Insights</title>
   <updated>2025-03-21T12:26:15+01:00</updated>
@@ -14,6 +15,7 @@
     <uri>https://deivid09000.github.io/ASIRinsights</uri>
   </contributor>
 
+
   <entry>
     <id>https://deivid09000.github.io/ASIRinsights/paginas/sobremi.html</id>
     <title>Sobre mi</title>
@@ -25,6 +27,7 @@
     <summary>En este artículo encontrará información sobre mi</summary>
     <link rel="alternate" href="https://deivid09000.github.io/ASIRinsights/paginas/sobremi.html"/>
   </entry>
+
 
   <entry>
     <id>https://deivid09000.github.io/ASIRinsights/paginas/Base%20de%20datos.html</id>
@@ -52,7 +55,7 @@
 
   <entry>
     <id>https://deivid09000.github.io/ASIRinsights/paginas/Implantaci%C3%B3n%20de%20sistemas.html</id>
-    <title>Implantacion de sistemas</title>
+    <title>Implantación de sistemas</title>
     <updated>2025-03-21T12:26:15+01:00</updated>
     <author>
       <name>David Ramirez Pantoja</name>
@@ -75,3 +78,46 @@
   </entry>
 
 </feed>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
