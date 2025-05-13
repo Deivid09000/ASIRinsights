@@ -4,39 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ASIR Insights</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header id="mainheader">
-    <nav id="navbar">
-      <div class="container">
-       <a href="index.html" class="logo">
-          <img src="images/favicon.ico" alt="">
-        </a>
-        <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="paginas/sobremi.html">SOBRE MÍ</a></li>
-          <li><a href="paginas/asignaturas.html">ASIGNATURAS</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<header id="mainheader">
+  <nav id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/favicon.ico" alt="">
+      </a>
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="paginas/sobremi.html">SOBRE MÍ</a></li>
+        <li class="dropdown">
+          <a href="#">ASIGNATURAS <i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="paginas/Base de datos.html">Base de datos</a></li>
+            <li><a href="paginas/Lenguaje de marcas.html">Lenguaje de marcas</a></li>
+            <li><a href="paginas/Implantación de sistemas.html">Implantación de sistemas</a></li>
+            <li><a href="paginas/Redes.html">Redes</a></li>
+            <li><a href="paginas/Fundamentos del hardware.html">Fundamentos del hardware</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-<section id="introduccion">
+  <section id="introduccion">
     <h2>Bienvenido a ASIR Insights</h2>
-    <p>Esta página web que sirve como portfolio es un proyecto que he tenido que hacer para demostrar mis conocimientos de html y css que he aprendido a lo largo de mi primer año en el grado superior de ASIR </p>
+    <p>Esta página web que sirve como portfolio es un proyecto que he tenido que hacer para demostrar mis conocimientos de HTML y CSS que he aprendido a lo largo de mi primer año en el grado superior de ASIR.</p>
+  </section>
+  
+  <section id="Siguiente" class="boton">
+  <div>
+   <a href="./paginas/sobremi.html" class="boton">Comenzemos</a>
   </div>
-</section>
+  </section>
 
-<footer>
-  <p>&copy; Todos los derechos reservados</p>
-    <div class="Correo y redes sociales">
+  <footer>
+    <p>&copy; Todos los derechos reservados</p>
+    <div class="correo-redes-sociales">
       <a href="mailto:davidramirezpantoja@gmail.com">
         <i class="fas fa-envelope"></i>
-        </a>
+      </a>
       <a href="https://www.instagram.com/deivid_rmb/">
         <i class="fab fa-instagram"></i>
       </a>
@@ -49,9 +64,8 @@
       <a href="./atom.xml">
         <i class="fas fa-rss-square"></i>
       </a>
-</footer>
+    </div>
+  </footer>
 
 </body>
-
 </html>
-

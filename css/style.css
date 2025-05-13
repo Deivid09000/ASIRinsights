@@ -1,6 +1,7 @@
-
-*{
-margin:0;
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,29 +16,87 @@ body {
 }
 
 .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#navbar {
+    background-color: #0c0c0c;
+    padding: 10px 0;
+}
+
+#navbar .container {
     display: flex;
-    justify-content: space-between
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
 }
-ul {
-     list-style-type: none;
 
-}
-li {
-    float: left;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-li a {
-    display: block;
-    color: white;
+.logo img {
+    height: 50px;
+    justify-content: left;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: rgb(45, 78, 185);
     text-align: center;
     padding: 1em;
     text-decoration: none;
+    font-size: 1.1em;
 }
-  
+
+#navbar ul li a:hover {
+    background-color: #bebc0c;
+    border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  top: 100%;
+  margin-top: 15px;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.8em 1em;
+  color: white;
+  white-space: nowrap;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+  border-radius: 5px;
+}
+
+.submenu li a:hover {
+  background-color: #0c0b0b;
+}
+
 footer {
-    color: #ffffff; 
+    color: #e7c144; 
     text-align: center;
     padding: 30px 20px;
     position: absolute; 
@@ -48,153 +107,160 @@ footer {
 footer a {
     text-decoration: none;
     transition: color 0.3s ease;
-    margin: 0px 10px
-    color: white; 
+    margin: 0px 10px;
+    color: #e7c144; 
     font-size: 30px;
 }
+
+#introduccion h2 {
+  text-align: center;
+  margin-top: 300px;
+  font-size: 3.5em;
+  white-space: nowrap;
+  color: gold;
+}
+
+#introduccion p {
+  text-align: center;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+#presentacion-1 h2,
+#presentacion-2 h2,
+#presentacion-3 h2,
+#presentacion-4 h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 2.3em;
+  white-space: nowrap;
+  color: gold;
+  margin-bottom: 80px;
+}
+
+#presentacion-1 p,
+#presentacion-2 p,
+#presentacion-3 p,
+#presentacion-4 p {
+  text-align: center;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+
 footer a:hover {
     color: #008cffef; 
 }
- 
-#introduccion h2 {
+
+#asignaturas {
+    padding: 50px 20px;
     text-align: center;
-    margin-top: 300px;
-    font-size: 3.5em;
-    white-space: nowrap;
+}
+
+#asignaturas h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
     color: gold;
 }
-  
-#introduccion p {
-    text-align: center;
-    font-size: 1.3em;
+
+#asignaturas p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
     color: #ffffff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#presentacion-1 h2 {
-    text-align: center;
-    margin-top: 50px;
+.asignaturas-modificar {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.asignaturas-modificar h3 {
     font-size: 2em;
-    white-space: nowrap;
-    color: white
-}
-
-#presentacion-1 p {
-    text-align: center;
-    font-size: 1.3em;
     color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-#presentacion-2 h2 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2em;
-    white-space: nowrap;
-    color: white
-}
-
-#presentacion-2 p {
-    text-align: center;
-    font-size: 1.3em;
+.asignaturas-modificar p {
+    font-size: 1.2em;
     color: #ffffff;
+    line-height: 1.6;
 }
 
-#presentacion-3 h2 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2em;
-    white-space: nowrap;
-    color: white
+.imagenes-asignatura {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-#presentacion-3 p {
-    text-align: center;
-    font-size: 1.3em;
-    color: #ffffff;
-}
-
-#presentacion-4 h2 {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 2em;
-    white-space: nowrap;
-    color: white
-}
-
-#presentacion-4 p {
-    text-align: center;
-    font-size: 1.3em;
-    color: #ffffff;
-}
-
-.seccion {
+.imagenes-asignatura img {
     width: 100%;
-    height: 20vh;
+    height: auto;
+    max-width: 500px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
 }
 
-#Base-de-datos {
-    text-align: center;
-    margin-left: 500px;
-    margin-top: 150px;
-    font-size: 1.5  em;
+section.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-#Lenguaje-de-marcas {
-    text-align: center;
-    margin-left: 75px;
-    margin-top: 150px;
-    font-size: 1.5  em;
-}
-
-#Implantación-de-sistemas {
-    text-align: center;
-    margin-left: 80px;
-    margin-top: 150px;
-    font-size: 1.5  em;
-}
-
-#Redes {
-    text-align: center;
-    margin-left: 600px;
-    margin-top: 150px;
-    font-size: 1.5  em;
-}
-
-#IPE {
-    text-align: center;
-    margin-left: 100px;
-    margin-top: 150px;
-    font-size: 1.5  em;
-}
-
-#Fundamentos-del-hardware {
-    text-align: center;
-    margin-left: 75px;
-    margin-top: 150px;
-    font-size: 1.5  em;
-}
-
-.boton {
-    display: inline-block;
+section.boton a {
     padding: 30px 65px;
     font-size: 20px;
     background-color: #0077ff;
+    color: white;
     text-decoration: none;
+    border-radius: 10px;
     border: none;
-    border-radius: 70px;
-    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+section.boton a:hover {
+    background-color: #083661;
+    transform: scale(1.05);
+}
+
+#Base-de-datos, #Lenguaje-de-marcas, #Implantación-de-sistemas, #Redes, #IPE, #Fundamentos-del-hardware {
     text-align: center;
+    font-size: 1.5em;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
 }
 
-.boton:hover {
-    background-color: #67bef0;
-}
+#Siguiente {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
 
-#navbar{
-    background-color: #333;
 }
-#navbar .logo img {
-    
-    height: 45px;
-    margin-top: 20px;
-
-  
